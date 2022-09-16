@@ -17,26 +17,21 @@
         style="background-image: url(../img/background.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
         <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container-fluid">
-                <a class="navbar-brand">
+                <a href="https://nightwolfstore.herokuapp.com/" class="navbar-brand">
                     <img src="../img/MyLogo.png" alt="Logo" width="40" height="40" class="d-inline-block">
                     Night Store</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page"
-                            href="https://nightwolfstore.herokuapp.com/">Home</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-end">
                         <a class="nav-link" href="../Product/">Product</a>
+                        <a class="nav-link" href="../Order/">Orders</a>
                         <a class="nav-link" href="../Contact/">Contact</a>
                     </div>
                 </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn bg-primary" type="submit">Search</button>
-                </form>
             </div>
         </nav>
 
@@ -89,17 +84,39 @@
         </div>
 
         <!-- Content -->
-        <h1 class="text-center bg-secondary align-items-center" style="height: 10vh;">About</h1>
+        <h1 class="text-center bg-secondary align-items-center">About</h1>
         <div class="container mt-5 mb-5">
-            <h2 class="bg-primary text-center row" style="border-radius: 40px; font-family: 'Segoe UI';">
+            <h2 class="bg-primary text-center row rounded-4 align-self-center" style=" font-family: 'Segoe UI';">
                 Night Wolf Store menjual berbagai produk digital yang dibutuhkan saat ini,
-                Seperti Akun Youtube Premium, Akun Netflix Premium, Akun Spotify premium.
-                Pelayanan 24/7 yang dilayani oleh BOT profesional.
+                Seperti Akun Youtube Premium, Akun Netflix Premium, Akun Spotify premium, Akun Canva Pro, Akun Amazon Prime, Akun Disney+ Hotstar. Dan kami tidak hanya menjual akun digital, tetapi kami juga menjual berbagai macam produk lainnya seperti, Followers dan Likes Instagram, Subs, Likes dan Views Youtube, Followers, Likes dan Views Tiktok. Pelayanan 24/7 yang dilayani oleh BOT profesional.
             </h2>
+        </div>
+        <div class="row w-100 d-flex justify-content-evenly">
+            <div class="card text-center bg-dark text-primary rounded-5" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="img/24-hours.png" alt="icon 1" class="card-img-top">
+                    <h5 class="card-title">Special Feature</h5>
+                    <p class="card-text">Pelayanan 24/7 dijamin siap jika dibutuhukan kapanpun.</p>
+                </div>
+            </div>
+            <div class="card text-center bg-dark text-primary rounded-5" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="img/hot-deal.png" alt="icon 2" class="card-img-top">
+                    <h5 class="card-title">Special Feature</h5>
+                    <p class="card-text">Harga dijamin ramah dikantong karena disini tempat yang paling murah.</p>
+                </div>
+            </div>
+            <div class="card text-center bg-dark text-primary rounded-5" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="img/rating.png" alt="icon 3" class="card-img-top">
+                    <h5 class="card-title">Special Feature</h5>
+                    <p class="card-text">Kualitas dijamin memuaskan, Apabila pelanggan mengalami kendala kami bisa bantu.</p>
+                </div>
+            </div>
         </div>
         
 
-        <footer class="bg-dark text-light text-center mb-0" style="height: 5vh;">
+        <footer class="bg-dark text-light text-center mt-5" style="height: 5vh;">
             <p>Copyright &copy; NightWolf 2022</p>
         </footer>
     </div>
