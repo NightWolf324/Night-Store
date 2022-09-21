@@ -27,9 +27,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="../Product/">Product</a>
-                        <a class="nav-link" href="../Order/">Orders</a>
-                        <a class="nav-link" href="../Contact/">Contact</a>
+                        <a class="nav-link" href="../Product">Product</a>
+                        <a class="nav-link" href="../Order">Orders</a>
+                        <a class="nav-link" href="../Contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -55,19 +55,19 @@
                 </div>
                 <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                     <label for="validationCustom04" class="form-label">Product</label>
-                    <select id="mainMenu" onchange="milih()" class="form-select" id="validationCustom04" required >
+                    <select id="mainMenu" onchange="milih()" class="form-select" id="validationCustom04" required>
                         <option selected disabled value="">Pilih</option>
                         <option value="yt">Youtube</option>
                         <option value="ig">Instagram</option>
                         <option value="tt">Tiktok</option>
                     </select>
                 </div>
-                <div id="defaultForm" style="height: 10vh;">
+                <div id="defaultForm" style="height: 20vh;">
                     <h2 class="text-center text-white col-sm-6 offset-sm-3 mt-5 mb-3">Order dong kak!!</h2>
                 </div>
                 <div id="youtubeForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
-                        <label for="validationCustom04" class="form-label">Tipe</label>
+                        <label for="validationCustom04" class="form-label">Kategori</label>
                         <select class="form-select" id="validationCustom04" required>
                             <option selected disabled value="">Pilih</option>
                             <option>Subscriber</option>
@@ -99,7 +99,101 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" required>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
+                            required>
+                    </div>
+
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
+                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
+                    </div>
+                </div>
+
+                <div id="instaForm">
+                    <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
+                        <label for="validationCustom04" class="form-label">Kategori</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Pilih</option>
+                            <option>Followers</option>
+                            <option>Likes</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
+                        <label for="validationCustom04" class="form-label">Jumlah</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Pilih</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="validationCustomUsername" class="form-label">Nickname</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nama@email.com" required>
+                    </div>
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="validationCustom03" class="form-label">Nomor HP</label>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
+                            required>
+                    </div>
+
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
+                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
+                    </div>
+                </div>
+
+                <div id="tiktokForm">
+                    <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
+                        <label for="validationCustom04" class="form-label">Kategori</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Pilih</option>
+                            <option>Followers</option>
+                            <option>Views</option>
+                            <option>Likes</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
+                        <label for="validationCustom04" class="form-label">Jumlah</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Pilih</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="validationCustomUsername" class="form-label">Nickname</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nama@email.com" required>
+                    </div>
+                    <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
+                        <label for="validationCustom03" class="form-label">Nomor HP</label>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
+                            required>
                     </div>
 
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
