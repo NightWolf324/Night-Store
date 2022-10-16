@@ -56,10 +56,43 @@
                 .tinggi {
                     height: 100vh;
                 }
-
                 @media screen and (max-width:500px) {
                     .tinggi {
                         height: 30vh;
+                    }
+                }
+                .gambar {
+                    height: 40vh; 
+                    width: 20%;
+                }
+                @media screen and (max-width:500px){
+                    .gambar {
+                        height: 20vh;
+                        width: 40%;
+                    }
+                }
+                .tulisan {
+                    font-size: 2.5em;
+                }
+                @media screen and (max-width:500px){
+                    .tulisan {
+                        font-size: 1.400em;
+                    }
+                }
+                .tulisan1 {
+                    font-size: 2.5em;
+                }
+                @media screen and (max-width:500px){
+                    .tulisan1 {
+                        font-size: 1.300em;
+                    }
+                }
+                .tulisan2 {
+                    font-size: 2.5em;
+                }
+                @media screen and (max-width:500px){
+                    .tulisan2 {
+                        font-size: 1.200em;
                     }
                 }
             </style>
@@ -97,8 +130,8 @@
 
         <!-- Content -->
         <h1 class="text-center bg-secondary align-items-center">About</h1>
-        <div data-aos="fade-right" class="container mt-5 mb-5">
-            <h2 class="text-light fs-5 text-sm-center row rounded-4 align-self-center"
+        <div data-aos="fade-up" class="container mt-5 mb-5">
+            <h2 class="text-light fs-4 text-sm-center row rounded-4 align-self-center"
                 style=" font-family: 'Segoe UI'; backdrop-filter: blur(3px) saturate(50%);">
                 Night Wolf Store menjual berbagai produk digital yang dibutuhkan saat ini, Seperti Akun Youtube Premium,
                 Akun Netflix Premium, Akun Spotify premium, Akun Canva Pro, Akun Amazon Prime, Akun Disney+ Hotstar. Dan
@@ -107,32 +140,28 @@
                 Pelayanan 24/7 yang dilayani oleh BOT profesional.
             </h2>
         </div>
-        <!-- <div data-aos="fade-up">aaaaaaaa</div> -->
-        <div class="row w-100 d-flex justify-content-evenly">
-            <div data-aos="fade-up" class="card text-center bg-dark text-primary rounded-5" style="width: 18rem;">
-                <div class="card-body">
-                    <img src="img/24-hours.png" alt="icon 1" class="card-img-top">
-                    <h5 class="card-title">Special Feature</h5>
-                    <p class="card-text">Pelayanan 24/7 dijamin siap jika dibutuhukan kapanpun.</p>
-                </div>
-            </div>
-            <div data-aos="fade-up" class="card text-center bg-dark text-primary rounded-5" style="width: 18rem;">
-                <div class="card-body">
-                    <img src="img/hot-deal.png" alt="icon 2" class="card-img-top">
-                    <h5 class="card-title">Special Feature</h5>
-                    <p class="card-text">Harga dijamin ramah dikantong karena disini tempat yang paling murah.</p>
-                </div>
-            </div>
-            <div data-aos="fade-up" class="card text-center bg-dark text-primary rounded-5" style="width: 18rem;">
-                <div class="card-body">
-                    <img src="img/rating.png" alt="icon 3" class="card-img-top">
-                    <h5 class="card-title">Special Feature</h5>
-                    <p class="card-text">Kualitas dijamin memuaskan, Apabila pelanggan mengalami kendala kami bisa
-                        bantu.</p>
-                </div>
-            </div>
+        <br>
+        <br>
+        <div class="row w-100 d-flex justify-content-evenly ">
+            <h1 data-aos="fade-right" style=" font-family: 'Segoe UI'; backdrop-filter: blur(3px) saturate(50%);" class="tulisan rounded-4 text-primary text-sm-center align-self-center col-6">
+                Pelayanan 24/7 dijamin siap jika dibutuhukan kapanpun.
+            </h1>
+            <img data-aos="fade-left" src="img/24-hours.png" alt="icon 1" class="gambar">
         </div>
-
+        <br>
+        <div class="row w-100 d-flex justify-content-evenly gambar">
+            <img data-aos="fade-right" src="img/hot-deal.png" alt="icon 1" class="gambar">
+            <h1 data-aos="fade-left" style=" font-family: 'Segoe UI'; backdrop-filter: blur(3px) saturate(50%);" class="tulisan1 rounded-4 text-primary text-sm-center align-self-center col-6">
+                Harga dijamin ramah dikantong karena disini tempat yang paling murah.
+            </h1>
+        </div>
+        <br>
+        <div class="row w-100 d-flex justify-content-evenly gambar">
+            <h1 data-aos="fade-right" style=" font-family: 'Segoe UI'; backdrop-filter: blur(3px) saturate(50%);" class="tulisan2 rounded-4 text-primary text-sm-center align-self-center col-6">
+                Kualitas dijamin memuaskan, Apabila pelanggan mengalami kendala kami bisa bantu.
+            </h1>
+            <img data-aos="fade-left" src="img/rating.png" alt="icon 1" class="gambar">
+        </div>
 
         <footer class="bg-dark text-light text-center mt-5" style="height: 5vh;">
             <span>&copy; 2022 NightWolf&trade;. All Rights Reserved.</span>
