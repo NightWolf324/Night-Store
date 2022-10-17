@@ -437,7 +437,7 @@ var totalAkunDn = document.getElementById('totalAkunDn')
 var totalAkunAz = document.getElementById('totalAkunAz')
 var harga
 
-function AkunYt() {
+function akunYt() {
     var akunYtb = document.getElementById('akunYtb').value
 
     if(akunYtb == '1') {
@@ -448,7 +448,7 @@ function AkunYt() {
     }
     totalAkunYt.innerHTML = rupiah(harga)
 }
-function AkunSt() {
+function akunSt() {
     var akunSpt = document.getElementById('akunSpt').value
 
     if(akunSpt == '1') {
@@ -459,7 +459,7 @@ function AkunSt() {
     }
     totalAkunSt.innerHTML = rupiah(harga)
 }
-function AkunNf() {
+function akunNf() {
     var akunNfx = document.getElementById('akunNfx').value
 
     if(akunNfx == '1') {
@@ -470,7 +470,7 @@ function AkunNf() {
     }
     totalAkunNf.innerHTML = rupiah(harga)
 }
-function AkunCv() {
+function akunCv() {
     var akunCva = document.getElementById('akunCva').value
 
     if(akunCva == '1') {
@@ -481,7 +481,7 @@ function AkunCv() {
     }
     totalAkunCv.innerHTML = rupiah(harga)
 }
-function AkunDn() {
+function akunDn() {
     var akunDnh = document.getElementById('akunDnh').value
 
     if(akunDnh == '1') {
@@ -492,7 +492,7 @@ function AkunDn() {
     }
     totalAkunDn.innerHTML = rupiah(harga)
 }
-function AkunAz() {
+function akunAz() {
     var akunAzp = document.getElementById('akunAzp').value
 
     if(akunAzp == '1') {
