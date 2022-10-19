@@ -172,7 +172,7 @@ function milih1() {
     }
 }
 function milih2() {
-    if(menu2.value == 'yt') {
+    if (menu2.value == 'yt') {
         tiktokLogo.style.display = "none"
         ytLogo.style.display = "block"
         instaLogo.style.display = "none"
@@ -194,7 +194,7 @@ function milih2() {
         akunDnForm.style.display = "none"
         akunAzForm.style.display = "none"
     }
-    if(menu2.value == 'st') {
+    if (menu2.value == 'st') {
         tiktokLogo.style.display = "none"
         ytLogo.style.display = "none"
         instaLogo.style.display = "none"
@@ -216,7 +216,7 @@ function milih2() {
         akunDnForm.style.display = "none"
         akunAzForm.style.display = "none"
     }
-    if(menu2.value == 'nf') {
+    if (menu2.value == 'nf') {
         tiktokLogo.style.display = "none"
         ytLogo.style.display = "none"
         instaLogo.style.display = "none"
@@ -238,7 +238,7 @@ function milih2() {
         akunDnForm.style.display = "none"
         akunAzForm.style.display = "none"
     }
-    if(menu2.value == 'cv') {
+    if (menu2.value == 'cv') {
         tiktokLogo.style.display = "none"
         ytLogo.style.display = "none"
         instaLogo.style.display = "none"
@@ -260,7 +260,7 @@ function milih2() {
         akunDnForm.style.display = "none"
         akunAzForm.style.display = "none"
     }
-    if(menu2.value == 'dn') {
+    if (menu2.value == 'dn') {
         tiktokLogo.style.display = "none"
         ytLogo.style.display = "none"
         instaLogo.style.display = "none"
@@ -282,7 +282,7 @@ function milih2() {
         akunDnForm.style.display = "block"
         akunAzForm.style.display = "none"
     }
-    if(menu2.value == 'az') {
+    if (menu2.value == 'az') {
         tiktokLogo.style.display = "none"
         ytLogo.style.display = "none"
         instaLogo.style.display = "none"
@@ -440,10 +440,10 @@ var harga
 function akunYt() {
     var akunYtb = document.getElementById('akunYtb').value
 
-    if(akunYtb == '1') {
+    if (akunYtb == '1') {
         harga = 2000
     }
-    if(akunYtb == '2') {
+    if (akunYtb == '2') {
         harga = 4000
     }
     totalAkunYt.innerHTML = rupiah(harga)
@@ -451,10 +451,10 @@ function akunYt() {
 function akunSt() {
     var akunSpt = document.getElementById('akunSpt').value
 
-    if(akunSpt == '1') {
+    if (akunSpt == '1') {
         harga = 2000
     }
-    if(akunSpt == '2') {
+    if (akunSpt == '2') {
         harga = 4000
     }
     totalAkunSt.innerHTML = rupiah(harga)
@@ -462,10 +462,10 @@ function akunSt() {
 function akunNf() {
     var akunNfx = document.getElementById('akunNfx').value
 
-    if(akunNfx == '1') {
+    if (akunNfx == '1') {
         harga = 2000
     }
-    if(akunNfx == '2') {
+    if (akunNfx == '2') {
         harga = 4000
     }
     totalAkunNf.innerHTML = rupiah(harga)
@@ -473,10 +473,10 @@ function akunNf() {
 function akunCv() {
     var akunCva = document.getElementById('akunCva').value
 
-    if(akunCva == '1') {
+    if (akunCva == '1') {
         harga = 2000
     }
-    if(akunCva == '2') {
+    if (akunCva == '2') {
         harga = 4000
     }
     totalAkunCv.innerHTML = rupiah(harga)
@@ -484,10 +484,10 @@ function akunCv() {
 function akunDn() {
     var akunDnh = document.getElementById('akunDnh').value
 
-    if(akunDnh == '1') {
+    if (akunDnh == '1') {
         harga = 2000
     }
-    if(akunDnh == '2') {
+    if (akunDnh == '2') {
         harga = 4000
     }
     totalAkunDn.innerHTML = rupiah(harga)
@@ -495,11 +495,11 @@ function akunDn() {
 function akunAz() {
     var akunAzp = document.getElementById('akunAzp').value
 
-    if(akunAzp == '1') {
+    if (akunAzp == '1') {
         harga = 2000
     }
-    if(akunAzp == '2') {
+    if (akunAzp == '2') {
         harga = 4000
     }
-    totalAkunYt.innerHTML = rupiah(harga)
+    totalAkunAz.innerHTML = rupiah(harga)
 }
