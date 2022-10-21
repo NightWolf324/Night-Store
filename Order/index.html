@@ -7,113 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order - Night Store</title>
     <link rel="shortcut icon" href="../img/MyLogo.png">
-    <!-- CSS only -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <style>
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
-
-    body {
-        overflow: overlay;
-    }
-
-    ::-webkit-scrollbar {
-        width: 15px;
-        background: transparent;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #343a40;
-        border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #495057;
-        border-radius: 4px;
-    }
-
-    /* Popup container */
-    .popup {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    /* The actual popup (appears on top) */
-    .popup .popuptext {
-        visibility: hidden;
-        width: 160px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 8px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -80px;
-    }
-
-    /* Popup arrow */
-    .popup .popuptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-    }
-
-    /* Toggle this class when clicking on the popup container (hide and show the popup) */
-    .popup .show {
-        visibility: visible;
-        -webkit-animation: fadeIn 1s;
-        animation: fadeIn 1s
-    }
-
-    /* Add animation (fade in the popup) */
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type=number] { -moz-appearance: textfield; }
+    body { overflow: overlay; }
+    ::-webkit-scrollbar { width: 15px; background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #343a40; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #495057; border-radius: 4px; }
 </style>
-
 <body>
-    <div
-        style="background-image: url(../img/background.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <div style="background-image: url(../img/background.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
         <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container-fluid">
-                <a href="https://nightwolfstore.herokuapp.com/" class="navbar-brand">
-                    <img src="../img/MyLogo.png" alt="Logo" width="40" height="40" class="d-inline-block">
-                    Night Store</a>
+                <a href="https://nightwolfstore.herokuapp.com/" class="navbar-brand"><img src="../img/MyLogo.png" alt="Logo" width="40" height="40" class="d-inline-block">Night Store</a>
                 <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -131,43 +40,15 @@
 
         <div data-aos="fade-down" class="card mt-5 text-primary bg-dark offset-1 col-10 offset-sm-3 col-sm-6 rounded-4">
             <div>
-                <div id="myLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/MyLogo.png">
-                </div>
-                <div id="youtubeLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/youtube-logo.png">
-                </div>
-                <div id="instaLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/instagram-Logo.png">
-                </div>
-                <div id="tiktokLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/tiktok-logo.png">
-                </div>
-                <div id="spotifyLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/spotify-logo.png">
-                </div>
-                <div id="netflixLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/netflix-logo.png">
-                </div>
-                <div id="canvaLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/canva-logo.png">
-                </div>
-                <div id="disneyLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/disneyHotstar-logo.png">
-                </div>
-                <div id="amazonLogo">
-                    <img class=" mx-auto d-block" style="width: 18rem;
-                    align-items: center;" src="../img/amazonPrime-logo.png">
-                </div>
-
+                <div id="myLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/MyLogo.png"></div>
+                <div id="youtubeLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/youtube-logo.png"></div>
+                <div id="instaLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/instagram-Logo.png"></div>
+                <div id="tiktokLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/tiktok-logo.png"></div>
+                <div id="spotifyLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/spotify-logo.png"></div>
+                <div id="netflixLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/netflix-logo.png"></div>
+                <div id="canvaLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/canva-logo.png"></div>
+                <div id="disneyLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/disneyHotstar-logo.png"></div>
+                <div id="amazonLogo"><img class=" mx-auto d-block" style="width: 18rem; align-items: center;" src="../img/amazonPrime-logo.png"></div>
                 <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                     <label for="validationCustom04" class="form-label">Produk</label>
                     <select id="mainMenu" onchange="produk()" class="form-select" id="validationCustom04" required>
@@ -197,9 +78,7 @@
                         <option value="az">Amazon Prime</option>
                     </select>
                 </div>
-                <div id="defaultForm" style="height: 25vh;">
-                    <h2 class="text-center text-white col-sm-6 offset-sm-3 mt-5 mb-3">Order dong kak!!</h2>
-                </div>
+                <div id="defaultForm" style="height: 25vh;"><h2 class="text-center text-white col-sm-6 offset-sm-3 mt-5 mb-3">Order dong kak!!</h2></div>
                 <form class="needs-validation1" onsubmit=" return false" novalidate id="youtubeForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jenis</label>
@@ -223,60 +102,42 @@
                         <label for="validationCustomUsername" class="form-label">Channel</label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" required>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" required>
                         </div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nama@email.com" autocomplete="off" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@email.com" autocomplete="off" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalYt">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalYt">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button>
                     </div>
                 </form>
-
                 <form class="needs-validation2" onsubmit=" return false" novalidate id="instaForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Kategori</label>
@@ -299,60 +160,41 @@
                         <label for="validationCustomUsername" class="form-label">Nickname</label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" required>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" required>
                         </div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nama@email.com" autocomplete="off" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@email.com" autocomplete="off" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalIg">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalIg">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation3" onsubmit=" return false" novalidate id="tiktokForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Kategori</label>
@@ -375,60 +217,41 @@
                         <label for="validationCustomUsername" class="form-label">Nickname</label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" required>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" required>
                         </div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nama@email.com" autocomplete="off" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@email.com" autocomplete="off" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalTt">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalTt">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation4" onsubmit=" return false" novalidate id="akunYtForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jumlah</label>
@@ -440,54 +263,36 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nama@email.com" autocomplete="off" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@email.com" autocomplete="off" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalAkunYt">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalAkunYt">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation5" onsubmit=" return false" novalidate id="akunStForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jumlah</label>
@@ -499,54 +304,36 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nama@email.com" autocomplete="off" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@email.com" autocomplete="off" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalAkunSt">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalAkunSt">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation6" onsubmit=" return false" novalidate id="akunNfForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jumlah</label>
@@ -558,54 +345,36 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off"
-                            placeholder="nama@email.com" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off" placeholder="nama@email.com" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalAkunNf">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalAkunNf">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation7" onsubmit=" return false" novalidate id="akunCvForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jumlah</label>
@@ -617,54 +386,36 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="nama@email.com" autocomplete="off" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@email.com" autocomplete="off" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalAkunCv">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalAkunCv">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation8" onsubmit=" return false" novalidate id="akunDnForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jumlah</label>
@@ -676,54 +427,36 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off"
-                            placeholder="nama@email.com" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off" placeholder="nama@email.com" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalAkunDn">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalAkunDn">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana: </label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button class="btn btn-primary mb-3" type="submit">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button class="btn btn-primary mb-3" type="submit">Submit</button></div>
                 </form>
-
                 <form class="needs-validation9" onsubmit=" return false" novalidate id="akunAzForm">
                     <div class="col-sm-4 offset-sm-4 col-8 offset-2 mb-3">
                         <label for="validationCustom04" class="form-label">Jumlah</label>
@@ -735,97 +468,61 @@
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off"
-                            placeholder="nama@email.com" required>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off" placeholder="nama@email.com" required>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Nomor HP</label>
-                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789"
-                            autocomplete="off" required>
-                        <div class="invalid-feedback">
-                            Tolong masukkan nomor WA anda!
-                        </div>
+                        <input type="number" class="form-control" id="validationCustom03" placeholder="08123456789" autocomplete="off" required>
+                        <div class="invalid-feedback">Tolong masukkan nomor WA anda!</div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Harga</label>
-                        <div class="form-control" style="height: 5vh;">
-                            <p><span id="totalAkunAz">Rp 0,00</span></p>
-                        </div>
+                        <div class="form-control" style="height: 5vh;"><p><span id="totalAkunAz">Rp 0,00</span></p></div>
                     </div>
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="validationCustom03" class="form-label">Metode Pembayaran </label>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay:
-                            </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Gopay:</label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Gopay.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
-                        <div>
-                            <label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana:
-                            </label>
-                        </div>
+                        <div><label for="validationCustom03" class="form-label" style="font-size: 0.8em;">Dana:</label></div>
                         <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png"
-                                    style="height: 30px; width: 30px;"></span>
-                            <input type="text" class="form-control text-wrap" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
+                            <span class="input-group-text" id="inputGroupPrepend"><img src="../img/Dana.png" style="height: 30px; width: 30px;"></span>
+                            <input type="text" class="form-control text-wrap" id="validationCustomUsername" aria-describedby="inputGroupPrepend" autocomplete="off" value="6281548286895" disabled>
                         </div>
                     </div>
-
                     <div class="mb-3 col-sm-4 offset-sm-4 col-8 offset-2">
                         <label for="formFileMultiple" class="form-label">Bukti Pembayaran</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
                     </div>
-                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;">
-                        <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                    </div>
+                    <div class="offset-sm-4 col-12 offset-2" style="height: 10vh;"><button type="submit" class="btn btn-primary mb-3">Submit</button></div>
                 </form>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content bg-success rounded-1">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5" id="staticBackdropLabel"><b>PESANAN</b></h1>
-                            <button type="button" onClick="window.location.reload()" class="btn-close"
-                                data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" onClick="window.location.reload()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <h2 class="modal-body text-light m-5">
-
-                            <b>Selamat!! Pesanan Anda sedang di Proses!! maks 24 jam.</b> 
-
-                        </h2>
-                        <div class="modal-footer">
-                            <button type="button" onClick="window.location.reload()" class="btn btn-primary"
-                                data-bs-dismiss="modal">Close</button>
+                        <h2 class="modal-body text-light m-5"><b>Selamat!! Pesanan Anda sedang di Proses!! maks 24 jam.</b></h2>
+                        <p class="text-dark">*This is fake, If you need this product please contact me!</p>
+                        <p class="text-dark">*Ini palsu, Jika Anda membutuhkan produk ini tolong hubungi saya!</p>
+                        <div class="modal-footer"><button type="button" onClick="window.location.reload()" class="btn btn-primary"data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="bg-dark text-light text-center mt-5 " style="background: #1A2238; height: 5vh; bottom: 0;">
-            <span>&copy; 2022 NightWolf&trade;. All Rights Reserved.</span>
-        </footer>
+        <footer class="bg-dark text-light text-center mt-5 " style="background: #1A2238; height: 5vh; bottom: 0;"><span>&copy; 2022 NightWolf&trade;. All Rights Reserved.</span></footer>
     </div>
 </body>
-
 <script type="application/javascript" src="app.js"></script>
 <script type="module" src="modal.js"></script>
-
-<!-- JavaScript Bundle with Popper -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-    </script>
-
+<script>AOS.init();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
